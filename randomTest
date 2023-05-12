@@ -1,0 +1,19 @@
+import random
+ # 生成随机不重复的数组
+def generate_random_array():
+    numbers = random.sample(range(1, 34), 6)
+    numbers.sort()
+    numbers.append(random.randint(1, 16))
+    return numbers
+ # 计算数组的和
+def calculate_array_sum(numbers):
+    return sum(numbers)
+ if __name__ == '__main__':
+    # 生成随机数组
+    numbers = generate_random_array()
+     # 输出随机数组
+    print(f"随机数组为：{numbers}")
+     # 计算数组的和
+    total = calculate_array_sum(numbers)
+     # 输出数组的和
+    print(f"数组的和为：{total}")
